@@ -1,5 +1,6 @@
 https://www.kaggle.com/code/residentmario/creating-reading-and-writing
 
+<<<<<<< HEAD
 rmdir /s /q .git
 
 Pandas Doc.
@@ -10,3 +11,5 @@ https://pandas.pydata.org/docs/user_guide/index.html#user-guide
 
 
 pip install kagglehub[pandas-datasets]
+=======
+>>>>>>> 6bbc2fb93cb35d18faf35b9879a06a9d49ffe853
