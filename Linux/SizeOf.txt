@@ -1,0 +1,12 @@
+-- GamingZone File 10 Big File Size --
+
+31M	/home/suresh/Suresh/GamingZone/API/media
+3.8M	/home/suresh/Suresh/GamingZone/API/staticfiles
+528K	/home/suresh/Suresh/GamingZone/API/work
+308K	/home/suresh/Suresh/GamingZone/API/db.sqlite3
+268K	/home/suresh/Suresh/GamingZone/API/templates
+124K	/home/suresh/Suresh/GamingZone/API/static
+120K	/home/suresh/Suresh/GamingZone/API/main
+48K	/home/suresh/Suresh/GamingZone/API/developers
+44K	/home/suresh/Suresh/GamingZone/API/API
+20K	/home/suresh/Suresh/GamingZone/API/sqlite_data.json
