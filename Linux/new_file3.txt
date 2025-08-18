@@ -1,0 +1,2 @@
+du -sh ~/Suresh/GamingZone/API/* | sort -rh | head -n 10 >> SizeOf.txt
+echo "" >> SizeOf.txt

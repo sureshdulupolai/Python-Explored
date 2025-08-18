@@ -1,0 +1,95 @@
+ls -la
+
+total 4
+drwxrwxrwx 1 suresh suresh 4096 Aug 17 12:53 .
+drwxrwxrwx 1 suresh suresh 4096 Aug 17 12:00 ..
+drwxrwxrwx 1 suresh suresh 4096 Aug 17 12:25 Test
+-rwxrwxrwx 1 suresh suresh 2570 Aug 17 11:53 linux.py
+-rwxrwxrwx 1 suresh suresh   46 Aug 17 12:52 new_file1.txt
+-rwxrwxrwx 1 suresh suresh   46 Aug 17 12:52 new_file3.txt
+
+
+🔍 Yeh kya matlab hai?
+
+ls -la → directory ke saare files aur folders (including hidden . aur ..) list karta hai, saath hi permissions, owner, size, aur date bhi dikhata hai.
+Line by line samjho:
+
+1. .
+Ye current directory ko represent karta hai (yani ~/DesktopLinux).
+
+2. ..
+Ye parent directory (upar wali folder) ko dikhata hai. Matlab agar aap cd .. likho to ek level upar chale jaoge.
+
+3. drwxrwxrwx
+d → ye ek directory hai (e.g., Test).
+rwxrwxrwx → iska matlab sabko read (r), write (w), execute (x) permission hai.
+
+4. -rwxrwxrwx
+- → ye ek file hai (e.g., linux.py, new_file1.txt).
+rwxrwxrwx → matlab again sabko read, write, execute permission hai.
+
+5. Owner/Group (suresh suresh)
+Matlab file aapke WSL user suresh ke naam pe hai.
+
+6. Size aur Date
+2570 → file ka size (bytes).
+Aug 17 11:53 → last modified time.
+
+
+
+
+-- 
+suresh@Nizam:~/DesktopLinux$ top
+top - 17:51:03 up  2:23,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  27 total,   1 running,  26 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.2 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7900.2 total,   7300.9 free,    511.8 used,    238.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7388.4 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    104 root      20   0   25136   5888   4864 S   0.3   0.1   0:01.61 systemd-udevd
+      1 root      20   0   21820  12152   9080 S   0.0   0.2   0:02.38 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.02 init-systemd(Ub
+      6 root      20   0    3076   1796   1792 S   0.0   0.0   0:00.00 init
+     58 root      19  -1   66828  14992  14224 S   0.0   0.2   0:01.44 systemd-journal
+    169 systemd+  20   0   21456  12672  10496 S   0.0   0.2   0:00.36 systemd-resolve
+    170 systemd+  20   0   91024   7552   6784 S   0.0   0.1   0:00.38 systemd-timesyn
+    183 root      20   0    4236   2432   2304 S   0.0   0.0   0:00.06 cron
+    184 message+  20   0    9624   4864   4352 S   0.0   0.1   0:00.55 dbus-daemon
+    201 root      20   0   17964   8192   7296 S   0.0   0.1   0:00.39 systemd-logind
+    206 root      20   0 1755840  13184  10752 S   0.0   0.2   0:00.57 wsl-pro-service
+    218 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.02 agetty
+    239 syslog    20   0  222508   4992   3968 S   0.0   0.1   0:00.50 rsyslogd
+    242 root      20   0 2024248  45284  32768 S   0.0   0.6   0:05.35 containerd
+    249 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty
+    265 root      20   0  107032  22272  13056 S   0.0   0.3   0:00.35 unattended-upgr
+    355 root      20   0 2270224  73120  52608 S   0.0   0.9   0:03.06 dockerd
+    624 root      20   0    3064    896    896 S   0.0   0.0   0:00.00 SessionLeader
+    626 root      20   0    3080   1024   1024 S   0.0   0.0   0:00.91 Relay(632)
+    632 suresh    20   0    7564   5632   4096 S   0.0   0.1   0:00.97 bash
+    635 root      20   0    6692   3968   3456 S   0.0   0.0   0:00.03 login
+    735 suresh    20   0   20304  11008   9088 S   0.0   0.1   0:00.25 systemd
+    736 suresh    20   0   21148   3516   1792 S   0.0   0.0   0:00.00 (sd-pam)
+
+Summary:
+top - 17:49:12 up  2:21,  1 user,  load average: 0.00, 0.00, 0.00
+
+up 2:21 → WSL ko 2 ghante 21 min se chal raha hai.
+load average: 0.00, 0.00, 0.00 → System bilkul free hai, koi load nahi hai (0 = idle).
+
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+
+25 total processes, 1 active, baaki idle/sleeping.
+zombie = dead processes (yaha 0, matlab clean hai 👍).
+
+PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1 root      20   0   21820  12152   9080 S   0.0   0.2   0:02.38 systemd
+
+PID = Process ID (unique number har process ka).
+USER = Kis user ke naam pe process chal raha hai (root, suresh, etc).
+PR/NI = Priority / Nice value (process scheduling ke liye).
+VIRT = Virtual memory.
+RES = Actual RAM use.
+S = State (S = sleeping, R = running, Z = zombie).
+%CPU, %MEM = Kitna CPU aur RAM use kar raha hai.
+COMMAND = Process ka naam.
