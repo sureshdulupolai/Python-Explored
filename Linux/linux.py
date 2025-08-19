@@ -1,4 +1,4 @@
-# It lab301
+# To Start, In PowerShell Run As Admis -> wsl
 # Linux Commands Learning Roadmap
 # [sudo] password for suresh: krish123
 
@@ -65,6 +65,13 @@ linux_cmds = [
     # for i in {1..10}; do curl -o /dev/null -s -w "%{http_code}\n" https://example.com; done -> Multiple Requests Load Test Simulation
 
     ("wget https://file.com/file.zip", "Download file"),
+    # Download with a perfect path
+    # Note 
+    # -O = Output file ka naam + path
+    # -P = sirf directory path, naam automatic URL se uthta hai
+    # wget -P ~/DesktopLinux/Test/ https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz -> with path
+    # wget -O ~/DesktopLinux/Test/my_pdf_1 https://ftp.gnu.org/gnu/wget/wget-1.21.4.tar.gz -> with file name
+    
     ("scp file.txt user@host:/path/", "Copy file to remote server"),
     ("ssh user@192.168.1.10", "Login to remote server"),
     ("netstat -tulnp", "Show active ports"),

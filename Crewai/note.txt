@@ -1,0 +1,11 @@
+1. Cource Introduction, Intro to RAG
+2. Intro to AI Agents & ReAct Agent
+3. Coding a ReAct AI Agent using Python
+4. Get Started With CrewAI
+5. Agents and Tasks in CrewAI
+6. Create your first Crew of AI Agents
+7. CrewAI Flows
+8. Creating a Custom Tool in CrewAI
+9. Memory in CrewAI
+10. Creating a RAG Project with CrewAI
+11. How to observe your CrewAI Agesnts ?
