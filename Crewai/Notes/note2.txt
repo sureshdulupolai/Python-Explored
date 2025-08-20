@@ -1,0 +1,83 @@
+# Crewai Setup
+# intall uv
+
+pip install uv
+uv tool install crewai
+
+
+# create project syntax
+crewai create crew <project_name>
+or
+uv tool run crewai create crew basic_crewai
+crewai --versiocre
+
+pip install crewai
+pip install "crewai[tools]"
+pip install --upgrade pip setuptools wheel
+pip install chromadb
+pip install crewai-tools
+
+
+
+(env) C:\Users\user\Desktop\suresh\Python_Lib\Crewai\project>crewai create crew basic_crewai
+Creating folder basic_crewai...
+Cache expired or not found. Fetching provider data from the web...
+Downloading  [####################################]  664964/31121
+Select a provider to set up:
+1. openai
+2. anthropic
+3. gemini
+4. nvidia_nim
+5. groq
+6. huggingface
+7. ollama
+8. watson
+9. bedrock
+10. azure
+11. cerebras
+12. sambanova
+13. other
+q. Quit
+Enter the number of your choice or 'q' to quit: 3
+
+# 3 -> gemini is for free
+
+
+Enter the number of your choice or 'q' to quit: 3
+Select a model to use for Gemini:
+1. gemini/gemini-1.5-flash
+2. gemini/gemini-1.5-pro
+3. gemini/gemini-2.0-flash-lite-001
+4. gemini/gemini-2.0-flash-001
+5. gemini/gemini-2.0-flash-thinking-exp-01-21
+6. gemini/gemini-2.5-flash-preview-04-17
+7. gemini/gemini-2.5-pro-exp-03-25
+8. gemini/gemini-gemma-2-9b-it
+9. gemini/gemini-gemma-2-27b-it
+10. gemini/gemma-3-1b-it
+11. gemini/gemma-3-4b-it
+12. gemini/gemma-3-12b-it
+13. gemini/gemma-3-27b-it
+q. Quit
+Enter the number of your choice or 'q' to quit: 1
+
+Enter the number of your choice or 'q' to quit: 1
+Enter your GEMINI API key from https://ai.dev/apikey (press Enter to skip):
+API keys and model saved to .env file
+Selected model: gemini/gemini-1.5-flash
+  - Created basic_crewai\.gitignore
+  - Created basic_crewai\pyproject.toml
+  - Created basic_crewai\README.md
+  - Created basic_crewai\knowledge\user_preference.txt
+  - Created basic_crewai\src\basic_crewai\__init__.py
+  - Created basic_crewai\src\basic_crewai\main.py
+  - Created basic_crewai\src\basic_crewai\crew.py
+  - Created basic_crewai\src\basic_crewai\tools\custom_tool.py
+  - Created basic_crewai\src\basic_crewai\tools\__init__.py
+  - Created basic_crewai\src\basic_crewai\config\agents.yaml
+  - Created basic_crewai\src\basic_crewai\config\tasks.yaml
+Crew basic_crewai created successfully!
+
+(env) C:\Users\user\Desktop\suresh\Python_Lib\Crewai\project>
+
+# skip api key for now, we can direct give api key

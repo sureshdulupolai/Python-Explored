@@ -1,0 +1,20 @@
+Prompt Structure -> Good to get information from chatgpt
+
+1. Instructional Prompts -> BluePrint Provide to AI
+Create a [formate] in [language/tone] for [target audience] that covers [topic] using [structure], and ends with [desired outcome].
+
+example:
+"write a instagram caption in hinglish with a playful + sarcastic tone for a Genz audience, selling a skincare product. Use a hook in the first line, 2 benefit in bullets, and a witty CTA at the end"
+
+2. Role-Based Prompt
+As a [specific expert/professional]. I'I give you a scenario, and i want you to respond as [that expert], considering industry standards and real world constraints.
+
+example:
+"You are a senior UI/UX designer, Review this homepage content layout and suggest 5 design improvements that will improve trust and conversions. keep the tone constructive and bignner-friendly"
+
+3. Formate-Constrained Prompts
+Give the answer in [x] formate. Use [columns/headings] to explain [use-case]. Keep it concise and value-packed
+
+example:
+"Create a weekly skill tracker in bullet formate to master data engineer in 30 days. Divide it by week 1 to week 4 with 3 tasks per week"
+
