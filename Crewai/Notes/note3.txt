@@ -1,0 +1,36 @@
+in python we use requiremnt.txt but in crewai we get "pyproject.toml"
+
+crew is a grp of gent, and every agent assign a task
+crew ai is a multi agent framework, gpr of agnet, every agent assign a some task, to perform that task every agent given some tools
+
+
+# Understand project folder
+- Project/src/main.py
+    BasicCrewai().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
+call crew like in django setting.py -> calling URL root
+
+
+- Project/src/crew.py
+    @agent -> is a decorator
+if we declared this before function that that function is know as crew agent
+
+- Project/src/config
+@agent
+def researcher(self) -> Agent:
+    return Agent(
+        config=self.agents_config['researcher'], # type: ignore[index]
+        verbose=True
+    )
+
+this is config in Project/src/config/accroding_set.yaml
+
+
+- project/src/crew.py
+# assign a task
+@task
+
+# assign a crew 
+@crew
+
+
+# Crew Built For Markting, Tech etc

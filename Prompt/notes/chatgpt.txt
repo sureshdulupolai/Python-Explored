@@ -1,0 +1,62 @@
+🚀 Prompt Engineering ko direct seekhne ka simple roadmap
+
+### 1. **Basic Samajh lo** (5 min me)
+
+Prompt engineering ka matlab hota hai — **AI ko aisa instruction dena ki wo tumhari requirement ke hisaab se best output de.**
+
+* Clear aur direct bano.
+* Context do (kis purpose ke liye chahiye).
+* Format specify karo (list, table, code, essay, etc.).
+
+---
+
+### 2. **Direct Practice Karo**
+
+Tumhe tutorial dekhne ki zarurat nahi. Bas ye steps follow karo:
+
+✅ **Experiment Method**
+
+* Ek hi question ko 3 alag style me poochho.
+* Compare karo kaunsa output best aata hai.
+
+Example:
+
+* "Explain Python decorators."
+* "Explain Python decorators in simple words with example."
+* "Explain Python decorators like I am 10 years old with a short code snippet."
+
+👉 Yehi tumhari **practice hai**.
+
+---
+
+### 3. **Structure Use Karo (SIMPLE Formula)**
+
+Har prompt likhte waqt yaad rakho:
+
+**S – Specific** (clear question)
+**I – Instruction** (kya chahiye, list/code/example)
+**M – Medium** (short/long/table/bullets)
+**P – Persona** (kaise explain kare: teacher, expert, kid, friend)
+**L – Limitations** (word limit, step limit, etc.)
+**E – Examples** (agar possible ho to sample include karo)
+
+---
+
+### 4. **Daily 10 Min Practice**
+
+Roz sirf 2–3 prompts try karo:
+
+* 1 normal (jaise history, science)
+* 1 technical (Python, SQL, etc.)
+* 1 creative (story, poem, idea)
+
+---
+
+### 5. **AI se feedback lo**
+
+Tum AI ko bol sakte ho:
+👉 *“Mera prompt kaise better ban sakta hai? Rewrite karo.”*
+Isse tum automatically improve karte jaoge.
+
+
+# Rewrite my last prompt to make it more effective.

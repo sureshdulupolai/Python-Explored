@@ -9,3 +9,19 @@
 9. Memory in CrewAI
 10. Creating a RAG Project with CrewAI
 11. How to observe your CrewAI Agesnts ?
+
+
+#
+pip install httpx
+pip install google
+pip install google-genai
+pip install python-dotenv
+pip install google-generativeai
+pip install dotenv
+
+# to get key
+https://aistudio.google.com/apikey
+
+# for jupiter cmd
+pip install notebook
+pip install jupyterlab
