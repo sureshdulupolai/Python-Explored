@@ -141,3 +141,6 @@ linux_cmds = [
     ("usermod -aG sudo user", "Add user to sudo group"),
     ("id", "Show current user UID & GID"),
 ]
+
+for i in linux_cmds:
+    print(i)

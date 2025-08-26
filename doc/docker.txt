@@ -1,0 +1,75 @@
+## 🛠️ Core Free/Open-Source DevOps Tools
+
+### 1. **Version Control & Collaboration**
+
+* **Git** → (Already in your stack ✅)
+* **GitHub / GitLab (Free tier)** → for repositories, issues, CI/CD pipelines.
+
+---
+
+### 2. **Containers**
+
+* **Docker** → (Free & open-source) → Package apps with dependencies.
+* **Podman** → Open-source alternative to Docker.
+* **Docker Compose** → Manage multi-container apps (e.g., Django + React + DB).
+
+---
+
+### 3. **CI/CD (Automation)**
+
+* **GitHub Actions (Free for public repos)** → Automate testing & deployment.
+* **GitLab CI/CD (Free)** → Similar to GitHub Actions.
+* **Jenkins** → Open-source CI/CD server, widely used.
+
+---
+
+### 4. **Container Orchestration**
+
+* **Kubernetes (K8s)** → Free, open-source cluster manager.
+* **Minikube / Kind** → Run Kubernetes locally on your laptop for practice.
+
+---
+
+### 5. **Infrastructure as Code (IaC)**
+
+* **Terraform (Open-source)** → Manage servers, cloud infra via code.
+* **Ansible (Open-source)** → Automate server setup/configurations.
+
+---
+
+### 6. **Monitoring & Logging**
+
+* **Prometheus + Grafana** → Open-source monitoring + dashboards.
+* **ELK Stack (Elasticsearch, Logstash, Kibana)** → For logging.
+
+---
+
+### 7. **Cloud (Free Tiers)**
+
+Even though AWS/GCP/Azure are not open-source, they all give **free credits/tier** for practice:
+
+* **AWS Free Tier** → EC2, S3, RDS, Lambda.
+* **Google Cloud Free Tier**.
+* **Azure Free Tier**.
+  💡 For pure open-source cloud → you can use **OpenStack (community version)**, but it’s heavy for beginners.
+
+---
+
+## 📅 3-Step Action Plan (Free DevOps Learning Path)
+
+### **Month 1–2:**
+
+* Master **Git + GitHub Actions** (deploy simple Django/React app).
+* Learn **Docker & Docker Compose**.
+
+### **Month 3–4:**
+
+* Set up **Jenkins** (locally or on free VM).
+* Learn **Kubernetes (Minikube/Kind)** basics.
+
+### **Month 5–6:**
+
+* Explore **Terraform + Ansible**.
+* Add **Grafana + Prometheus** for monitoring.
+* Try free-tier cloud deployment (AWS/GCP).
+
