@@ -25,3 +25,7 @@ st.write(f'Selected Cups : {cups}')
 name = st.text_input("Enter your name")
 if name:
     st.write(f"Welcome, {name} ! Your Chai is on the way...")
+
+dob = st.date_input("Select Your Date Of Birth")
+if dob:
+    st.write(f"Your Date of Birth is : {dob}")
