@@ -1,0 +1,58 @@
+[
+    {
+        "id" : 1,
+        "name": "suresh",
+        "gmail": "suresh@gmail.com",
+        "password": "suresh123",
+        "cat": "admin",
+        "mobile": "9820646838"
+    },
+    {
+        "id" : 2,
+        "name": "ravi",
+        "gmail": "ravi123@gmail.com",
+        "password": "ravi@321",
+        "cat": "editor",
+        "mobile": "9123456780"
+    },
+    {
+        "id" : 3,
+        "name": "anjali",
+        "gmail": "anjali99@gmail.com",
+        "password": "anjali!99",
+        "cat": "viewer",
+        "mobile": "9988776655"
+    },
+    {
+        "id" : 4,
+        "name": "vikas",
+        "gmail": "vikas.kumar@gmail.com",
+        "password": "vikas#456",
+        "cat": "admin",
+        "mobile": "9012345678"
+    },
+    {
+        "id" : 5,
+        "name": "priya",
+        "gmail": "priya.sharma@gmail.com",
+        "password": "priya_789",
+        "cat": "editor",
+        "mobile": "9345678901"
+    },
+    {
+        "id" : 6,
+        "name": "arjun",
+        "gmail": "arjun.mehta@gmail.com",
+        "password": "arjun$123",
+        "cat": "viewer",
+        "mobile": "9456123789"
+    },
+    {
+        "id" : 7,
+        "name": "krish",
+        "gmail": "krish@gmail.com",
+        "password": "suresh@123",
+        "cat": "admin",
+        "mobile": "9999999999"
+    }
+]

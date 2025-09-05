@@ -1,0 +1,9 @@
+[
+    {
+        "id" : 1,
+        "userid" : 1,
+        "friends" : [],
+        "invite" : [],
+        "block" : []
+    }
+]
