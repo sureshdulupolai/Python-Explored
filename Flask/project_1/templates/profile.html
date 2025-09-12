@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - FlaskApp{% endblock %}
+
+{% block body %}
+<div class="card shadow-lg p-4">
+    <div class="text-center mb-3">
+        <h2 class="text-primary">👤 Student Profile</h2>
+        <hr>
+    </div>
+
+    <!-- Name -->
+    <p><strong>Name:</strong> {{ name }}</p>
+
+    <!-- Conditional Rendering -->
+    {% if is_topper %}
+        <p class="text-success"><strong>Status:</strong> 🏆 Topper Student</p>
+    {% else %}
+        <p class="text-secondary"><strong>Status:</strong> Normal Student</p>
+    {% endif %}
+
+    <!-- Subjects List -->
+    <h5 class="mt-3">📚 Subjects:</h5>
+    <ul class="list-group mb-3">
+        {% for subject in subjects %}
+            <li class="list-group-item">
+                <span class="fw-bold">{{ loop.index }}.</span> {{ subject }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

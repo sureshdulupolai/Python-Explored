@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - FlaskApp{% endblock %}
+
+{% block body %}
+<div class="text-center mt-5">
+    <h1 class="text-primary">🏠 Welcome Home!</h1>
+    <p class="lead">This is the homepage of your Flask project.</p>
+    <a href="{{ url_for('login') }}" class="btn btn-success">🔑 Go to Login</a>
+</div>
+{% endblock %}

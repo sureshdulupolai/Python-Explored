@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome - FlaskApp{% endblock %}
+
+{% block body %}
+<div class="text-center mt-5">
+    <h1 class="text-success">🎉 Welcome {{ name }}!</h1>
+    <p class="lead">You are successfully logged in.</p>
+    <a href="{{ url_for('logout') }}" class="btn btn-danger">🚪 Logout</a>
+</div>
+{% endblock %}
