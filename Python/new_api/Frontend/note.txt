@@ -1,0 +1,19 @@
+my_flask_project/
+│
+├─ app/
+│   ├─ __init__.py          # Flask app factory yaha
+│   ├─ models.py            # SQLAlchemy models
+│   ├─ routes/
+│   │   ├─ __init__.py
+│   │   ├─ category.py
+│   │   ├─ product.py
+│   ├─ schemas.py           # Pydantic-like schemas optional (for validation)
+│   ├─ utils.py             # Slug generation, helper functions
+│   ├─ templates/           # HTML templates (agar frontend Flask me hai)
+│   └─ static/              # CSS, JS, images
+│
+├─ migrations/              # DB migrations (Flask-Migrate)
+├─ requirements.txt         # All dependencies
+├─ config.py                # Configurations (DB, secret keys, etc.)
+├─ run.py                   # Entry point of app
+└─ .env                     # Environment variables
