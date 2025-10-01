@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Register {% endblock title %} 
+{% block content %}
+
+<form action="" method="post">
+  {% csrf_token %} {% for i in form %}
+  <div class="mb-3">{{i.label_tag}} {{i}} {{i.errors}}</div>
+  
+  {% endfor %}
+  <button class="btn btn-danger mt-3" type="submit">Register</button>
+</form>
+{% endblock content %}

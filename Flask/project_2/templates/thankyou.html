@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You{% endblock %}
+
+{% block content %}
+<div class="card shadow p-4 text-center">
+    <h2 class="mb-3">Thank You, {{ user }}!</h2>
+    {% if message %}
+        <p class="lead">We really appreciate your feedback:</p>
+        <blockquote class="blockquote">
+            <p class="mb-0">{{ message }}</p>
+        </blockquote>
+    {% else %}
+        <p class="lead">Your response has been recorded.</p>
+    {% endif %}
+    <a href="/feedback" class="btn btn-secondary mt-4">Give More Feedback</a>
+</div>
+{% endblock %}

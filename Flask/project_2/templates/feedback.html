@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback Form{% endblock %}
+
+{% block content %}
+<div class="card shadow p-4">
+    <h2 class="mb-4">Give Your Feedback</h2>
+    <form method="POST" action="/feedback">
+        <div class="mb-3">
+            <label for="username" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your feedback..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+    </form>
+</div>
+{% endblock %}

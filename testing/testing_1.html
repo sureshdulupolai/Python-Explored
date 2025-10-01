@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Society - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.38/bundled/lenis.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fbff;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #3a86ff;
+    }
+
+    .navbar-brand {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #3a86ff, #5f99ff);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section-content {
+      padding: 60px 0;
+    }
+
+    .feature-img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      background-color: #ffbe0b;
+      border: none;
+      color: #000;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #ffa800;
+    }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .animated-section {
+      background-color: #e0f7fa;
+      padding: 60px 0;
+    }
+
+    .animated-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .animated-icon {
+      font-size: 3rem;
+      color: #3a86ff;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #3a86ff;
+      color: white;
+      padding: 0px 0;
+    }
+
+    footer a {
+      color: #ffd60a;
+      text-decoration: none;
+    }
+    .animated-icon {
+  font-size: 3.5rem;
+  color: #3a86ff;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.animated-icon:hover {
+  transform: scale(1.2);
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="#">Society</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Welcome to Society</h1>
+            <p>Your complete housing & community management system</p>
+            <a href="#info" class="btn btn-custom mt-4">Get Started</a>
+        </div>
+    </div>
+
+  <!-- Info Section -->
+    <div class="section-content" id="info">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://media.gettyimages.com/id/1690935364/photo/excited-to-start-the-run.jpg?s=612x612&w=gi&k=20&c=jZE4dsdrPswVbRWnvzZ7BFl6I7YIsdcXIGby-T1B-G4=" alt="Society Image" class="feature-img" />
+                </div>
+            <div class="col-md-6">
+                <h2 class="mb-3">Why Choose Our Society System?</h2>
+                <p>Our digital platform helps residents and staff manage all society operations like services, entry logs, complaints, and announcements with ease. Everything you need, all in one place.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4 d-flex">
+            <div class="info-box w-100">
+                <h4><i class='bx bx-shield'></i> Security Management</h4>
+                <p>Track visitor entries and exits, enable guard verification and live activity feeds for maximum safety.</p>
+            </div>
+            </div>
+            <div class="col-md-4 d-flex">
+            <div class="info-box w-100">
+                <h4><i class='bx bx-home-smile'></i> Resident Services</h4>
+                <p>Raise service requests, view past logs, track resolution, and communicate easily with service staff.</p>
+            </div>
+            </div>
+            <div class="col-md-4 d-flex">
+            <div class="info-box w-100">
+                <h4><i class='bx bx-broadcast'></i> Announcements & Events</h4>
+                <p>Receive important notices, upcoming functions, and festival announcements in real time.</p>
+            </div>
+            </div>
+        </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 d-flex">
+          <div class="info-box w-100">
+            <h4><i class='bx bx-photo-album'></i> Media Sharing</h4>
+            <p>Upload photos/videos of events, functions, or society memories with built-in gallery support.</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex">
+            <div class="info-box w-100">
+                <h4><i class='bx bx-bell'></i> Live Notifications</h4>
+                <p>Get real-time push alerts for gate entry, delivery, package arrival, service updates, and society events.</p>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Call To Action Section -->
+    <div class="section-content text-center bg-light mt-5 py-5">
+        <div class="container">
+          <h2 class="mb-3">Still exploring?</h2>
+          <p class="mb-4">Learn more about how our platform can transform your society living experience.</p>
+          <a href="#" class="btn btn-custom">Explore More Features</a>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="animated-section py-5" style="background-color: #e6f0ff;">
+    <div class="container">
+        <h2 class="text-center mb-5">Smarter Society Living</h2>
+        <div class="row g-4">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+            <i class='bx bx-cloud-upload animated-icon'></i>
+            <h5>Anytime Access</h5>
+            <p>Stay connected to your society 24/7 from any device, anywhere in the world — thanks to powerful cloud infrastructure.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+            <i class='bx bx-line-chart animated-icon'></i>
+            <h5>Smart Dashboards</h5>
+            <p>Visualize financials, track payments, and view reports — all through an intelligent, user-friendly dashboard.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+            <i class='bx bx-message-detail animated-icon'></i>
+            <h5>Community Communication</h5>
+            <p>Discuss society matters, send private messages, and get notified instantly — stay in touch, effortlessly.</p>
+        </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <i class='bx bx-credit-card-front animated-icon'></i>
+            <h5>Online Payments</h5>
+            <p>Pay maintenance, dues, or special contributions via secure online gateways — no more chasing checks.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="500">
+            <i class='bx bx-cctv animated-icon'></i>
+            <h5>Visitor Tracking</h5>
+            <p>Track guest entries, delivery logs, and security staff in real-time — stay informed, stay safe.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="600">
+            <i class='bx bx-happy-beaming animated-icon'></i>
+            <h5>Resident Happiness</h5>
+            <p>Celebrate birthdays, festivals, and achievements — we help you build a thriving, joyful community.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+  <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-3">🏢 About Society</h5>
+            <p>Society is a modern community management platform built to simplify housing services, security, and communication among residents and staff.</p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-3">🔗 Quick Links</h5>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Home</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Login</a></li>
+                <li><a href="#" class="text-white text-decoration-none d-block mb-2">Signup</a></li>
+                <li><a href="#info" class="text-white text-decoration-none d-block">Explore</a></li>
+            </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+            <h5 class="text-uppercase fw-bold mb-3">📞 Contact</h5>
+            <p><i class='bx bx-map'></i> 123 Society Lane, Dream City, India</p>
+            <p><i class='bx bx-envelope'></i> support@society.com</p>
+            <p><i class='bx bx-phone'></i> +91 98765 43210</p>
+            </div>
+        </div>
+
+        <hr class="my-3" />
+        <div class="row text-center">
+            <div class="col-md-12">
+            <p class="mb-0">&copy; 2025 <strong>Society App</strong>. All rights reserved.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        const lenis = new Lenis();
+        function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
