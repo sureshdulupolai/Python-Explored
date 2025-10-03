@@ -1,5 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
 from functools import reduce
+import csv, json
 
 class History:
     def __init__(self, history_list):
@@ -159,6 +160,7 @@ class Search:
 
         return {"status": "success", "list": processed_list}
     
+    @staticmethod
     def __dict_choice__(InputDict, Keys=None, type=True, repeat=False):
         try:
             dict_list = InputDict if isinstance(InputDict, list) else [InputDict]
@@ -176,6 +178,27 @@ class Search:
             return list(dict.fromkeys(out)) if repeat else out
 
         except (TypeError, KeyError) as e:
+            return {"error": str(e), "status": "fail"}
+
+    @staticmethod
+    def __CSV__(file_path, Keys=None, type=True, repeat=False):
+        try:
+            with open(file_path, newline='', encoding="utf-8") as csvfile:
+                reader = csv.DictReader(csvfile)
+                dict_list = []
+                for row in reader:
+                    parsed_row = {}
+                    for k, v in row.items():
+                        v = v.strip() if isinstance(v, str) else v
+                        try:
+                            # agar cell JSON hai to parse karlo
+                            parsed_row[k] = json.loads(v) if v and v[0] in ['{','['] else v
+                        except Exception:
+                            parsed_row[k] = v
+                    dict_list.append(parsed_row)
+            return Search.__dict_choice__(dict_list, Keys=Keys, type=type, repeat=repeat) if Keys else dict_list
+
+        except Exception as e:
             return {"error": str(e), "status": "fail"}
 
     # 🔹 New function: Show all projects with details
@@ -243,21 +266,20 @@ def MainFunction():
         'Airport Road', 'Andheri', 'Versova', 
         'Santacruz', 'Aaroli', 'Asalpha'
     ])
-
-    print(my_filter.show_all_projects())
+    # print(my_filter.show_all_projects())
 
     while True:
         UserSearch = input("Search For Location: ")
 
-        if UserSearch.lower() in ['exit']:
+        if UserSearch.lower() == 'exit-me':
             break
 
-        elif UserSearch.lower() in ['history']:
+        elif UserSearch.lower() == 'history-off':
             Printing(data=my_filter.__history_iter__().__all_())
             continue
 
         data = my_filter.__single__(UserSearch)
-    
+
         if not data or len(data['search']) == 0:
             print(f"No Location Found For {UserSearch}")
         elif data['find'] == True:
@@ -268,4 +290,21 @@ def MainFunction():
 
     return None
 
-MainFunction()
+# MainFunction()
+
+def TestingCSV():
+    my_filter = Search()
+    path = "employees.csv"
+
+    print(my_filter.__CSV__(path, Keys=["name"]))
+
+    print()
+    print(my_filter.__CSV__(path, Keys=["info.skills"]))
+
+    print()
+    print(my_filter.__CSV__(path, Keys=["projects"]))
+
+    print()
+    print(my_filter.__CSV__(path))
+
+TestingCSV()

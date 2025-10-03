@@ -220,4 +220,36 @@ print("Next item:", hist.next())
 print("Next item (beyond end):", hist.next())
 # Output: None
 
+
+
+# ---------------------------------------------------------------------------------------------
+id,name,info,projects
+1,Amit,"{""skills"":[""Python"",""Django""],""experience"":5}","['ERP','Migration']"
+2,Neha,"{""skills"":[""Excel"",""HR""],""experience"":7}","['Recruitment','Payroll']"
+
+
+def TestingCSV():
+    my_filter = Search()
+    path = "employees.csv"
+
+    # ✅ Example 1: Get simple column
+    print(my_filter.__CSV__(path, Keys=["name"]))
+    # Output: ['Amit', 'Neha']
+
+    # ✅ Example 2: Get nested JSON values from 'info'
+    print(my_filter.__CSV__(path, Keys=["info.skills"]))
+    # Output: ['Python', 'Django', 'Excel', 'HR']
+
+    # ✅ Example 3: Get list stored as string in 'projects'
+    print(my_filter.__CSV__(path, Keys=["projects"]))
+    # Output: ['ERP', 'Migration', 'Recruitment', 'Payroll']
+
+    # ✅ Example 4: Get full list of dict (raw data)
+    print(my_filter.__CSV__(path))
+    # Output:
+    # [
+    #   {'id': '1', 'name': 'Amit', 'info': {'skills': ['Python','Django'], 'experience': 5}, 'projects': ['ERP','Migration']},
+    #   {'id': '2', 'name': 'Neha', 'info': {'skills': ['Excel','HR'], 'experience': 7}, 'projects': ['Recruitment','Payroll']}
+    # ]
+
 """
