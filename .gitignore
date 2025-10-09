@@ -19,3 +19,7 @@ __pycache__/
 
 # OS files
 Thumbs.db
+
+# Environment files
+.env
+*.env
