@@ -16,6 +16,5 @@ if image is not None:
         print("Image Save succesfully as 'output_py.jpg'")
     else:
         print('Failed to save an image')
-
 else:
     print('Error: Image Not Found')

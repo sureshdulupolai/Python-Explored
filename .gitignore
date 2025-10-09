@@ -1,2 +1,21 @@
 "Excel_Py/credentials.json" 
 "Excel_Py/credentials.json" 
+
+# Ignore virtual environment
+env/
+venv/
+ENV/
+
+# Python cache and other stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+
+# OS files
+Thumbs.db
